@@ -25,3 +25,10 @@ class style:
     DIM       = '\033[2m'
     NORMAL    = '\033[22m'
     RESET_ALL = '\033[0m'
+       
+# Example usage
+print(f"{fg.RED}This is red text{fg.RESET}")
+print(f"{bg.YELLOW}{fg.BLUE}This is blue text on a yellow background{bg.RESET}{fg.RESET}")
+print(f"{style.BRIGHT}{fg.GREEN}This is bright green text{style.RESET_ALL}")
+print(f"{style.DIM}{fg.MAGENTA}This is dim magenta text{style.RESET_ALL}")
+print(f"{style.NORMAL}{bg.CYAN}{fg.BLACK}This is normal black text on a cyan background{style.RESET_ALL}{bg.RESET}{fg.RESET}")
